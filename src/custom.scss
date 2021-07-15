@@ -1,0 +1,78 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+$color-primary: black;
+$color-secondary: white;
+
+html {
+    scroll-behavior: smooth;
+}
+
+#top {
+    background-color: $color-primary; //#3c3c3b;
+    color: $color-secondary;
+    font-family: 'Comfortaa', cursive;
+}
+
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    background-color: $color-primary !important; //#30302f !important;
+    border-bottom: 1px;
+    border-bottom-style: groove;
+    border-color: $color-primary;
+}
+
+.name {
+    text-decoration: none !important;
+    font-size: larger;
+    font-weight: 100;
+    color: $color-secondary;
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 500ms;
+    &:hover, &:active {
+        color: $color-secondary;
+    }
+}
+
+.current > .nav-link {
+    color: $color-secondary;
+}
+
+.section {
+    padding-top: 10vh;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.btn {
+    // $btn-color: black; //rgba(121, 116, 116, 0.562);
+    background-color: $color-primary;
+    border-radius: 25px;
+    border-color: $color-secondary;
+    transition: 0.6s;
+
+    &:hover, &active {
+        background-color: $color-secondary !important; 
+        border-color:$color-primary !important;
+        color: $color-primary;
+    }
+
+    &:focus, &:active {
+    box-shadow:none !important;
+    outline:0px !important;
+    }
+
+    &:focus {
+        background-color: $color-primary;
+        border-color: $color-secondary;
+    }
+}
+
