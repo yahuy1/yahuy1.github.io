@@ -1,9 +1,5 @@
 @import '../app.scss';
 
-// $color-primary: black;
-// $color-secondary: rgb(53, 139, 196);
-// $color-inactivate: rgba(255, 255, 255, 0.5);
-
 #content-about {
     display: flex;
     justify-content: center;
@@ -14,20 +10,29 @@
     border-style: solid;
     border-radius: 300px;
     margin-bottom: 1vh;
-    width: 186px;
+    border-color: $color-secondary !important;
+    width: 186px; // 186px for border
     display: inline-block;
     text-align: center;
+    box-shadow:0 0 30px $color-secondary;
 }
 
 img {
+    // filter: grayscale(50%) hue-rotate(190deg) brightness(1.5); // Light Mode
     display: block;
     border-radius: 125px;
     border-width: 0px;
     transition: 500ms ease;
-    filter: grayscale(70%) hue-rotate(204deg) brightness(1.05);
-    // filter: grayscale(50%) hue-rotate(190deg) brightness(1.5); // Light Mode
-    border-color: $color-secondary !important;
-    // animation: none !important;
+    filter: grayscale(50%) hue-rotate(190deg) brightness(0.4);
+    animation: breathing 5s forwards;
+    @keyframes breathing {
+        from {
+            filter: grayscale(50%) hue-rotate(190deg) brightness(0.3);
+        } 
+        to {
+            filter: grayscale(50%) hue-rotate(190deg) brightness(1.3);
+        }
+    }
 }
 
 .text-icon {
