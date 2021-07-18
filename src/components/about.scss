@@ -1,0 +1,116 @@
+@import '../app.scss';
+
+// $color-primary: black;
+// $color-secondary: rgb(53, 139, 196);
+// $color-inactivate: rgba(255, 255, 255, 0.5);
+
+#content-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-border {
+    border-style: solid;
+    border-radius: 300px;
+    margin-bottom: 1vh;
+    width: 186px;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    display: block;
+    border-radius: 125px;
+    border-width: 0px;
+    transition: 500ms ease;
+    filter: grayscale(70%) hue-rotate(204deg) brightness(1.05);
+    // filter: grayscale(50%) hue-rotate(190deg) brightness(1.5); // Light Mode
+    border-color: $color-secondary !important;
+    // animation: none !important;
+}
+
+.text-icon {
+    color: $color-inactivate;
+    transition: 0.5s;
+    font-size: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+.animated-left-shift {
+    animation: left-shift 1s forwards !important;
+    @keyframes left-shift {
+        from {
+            transform: translateX(0vh);
+        }
+        to {
+            transform: translateX(-40vh);
+        }
+    }
+}
+
+.animated-left-return {
+    animation: left-return 1s forwards;
+    @keyframes left-return {
+        from {
+            transform: translateX(-40vh);
+        }
+        to {
+            transform: translateX(0vh);
+        }
+    }
+}
+
+#just-to-flex, #summary-about, #more-about {
+    flex: 1;
+}
+
+#summary-about {
+    z-index: 1;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: 0;
+    text-align: left;
+}
+
+.animated-right-shift {
+    animation: right-shift 1s forwards !important;
+    @keyframes right-shift {
+        from {
+            opacity: 0;
+            transform: translateX(-30vh);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(-10vh);
+        }
+    }
+}
+
+.animated-right-return {
+    animation: right-return 1s forwards;
+    @keyframes right-return {
+        from {
+            opacity: 1;
+            transform: translateX(-10vh);
+        }
+        to {
+            opacity: 0;
+            transform: translateX(-30vh);
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    #aaa {
+        *:nth-child(#{$i}){
+            animation-delay: $i * 0.3s - 0.3s !important;
+        }
+    }
+  }

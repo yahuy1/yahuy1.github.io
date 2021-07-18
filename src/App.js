@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Reveal from 'react-reveal/Reveal';
 import About from './components/About';
-import './App.css';
-import './custom.scss';
+import './app.scss';
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <nav className="navbar navbar-expand-sm sticky-top">
         
         {/* Brand */}
-        <nav><a className="name" href="#">Huy</a></nav>
+        <nav><a className="name" href="#"><i class="bi bi-chevron-up" style={{fontSize: '40px'}}></i></a></nav>
         
         {/* Navbar links */}
         <Scrollspy 
@@ -28,16 +27,17 @@ function App() {
           <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
 
           {/* Generate CV button */}
-          <button className="btn btn-primary"  onClick={() => {console.log(window.scrollY)}}>Generate CV</button>
+          <button className="btn btn-primary">Download CV</button>
         </Scrollspy>
       </nav>
       
       {/* Main */}
+      {/* About */}
+      <section id="about" className="section">
+        <About />
+      </section>
+            
       <Reveal effect="animated-fadeInUp">
-        {/* About */}
-        <section id="about" className="section">
-          <About />
-        </section>
 
         {/* Education */}
         <section id="education" className="section">
