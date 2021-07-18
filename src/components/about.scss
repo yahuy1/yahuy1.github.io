@@ -70,7 +70,7 @@ img {
 }
 
 #summary-about {
-    z-index: 1;
+    z-index: 100;
 }
 
 .hidden {
@@ -83,10 +83,12 @@ img {
     animation: right-shift 1s forwards !important;
     @keyframes right-shift {
         from {
+            z-index: 0;
             opacity: 0;
             transform: translateX(-30vh);
         }
         to {
+            z-index: 101;
             opacity: 1;
             transform: translateX(-10vh);
         }
@@ -97,10 +99,12 @@ img {
     animation: right-return 1s forwards;
     @keyframes right-return {
         from {
+            z-index: 101;
             opacity: 1;
             transform: translateX(-10vh);
         }
-        to {
+        100% {
+            z-index: 0;
             opacity: 0;
             transform: translateX(-30vh);
         }
@@ -109,8 +113,10 @@ img {
 
 @for $i from 1 through 4 {
     #aaa {
+        z-index: 100;
         *:nth-child(#{$i}){
             animation-delay: $i * 0.3s - 0.3s !important;
+            z-index: 100 !important;
         }
     }
   }
