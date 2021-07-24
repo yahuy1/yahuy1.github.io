@@ -27,11 +27,12 @@ html {
     border-color: $color-primary;
 }
 
-.name {
+.home {
     text-decoration: none !important;
     font-size: larger;
     font-weight: 100;
     color: $color-secondary;
+    text-shadow: 0 0 3px $color-secondary !important;
     &:hover {
         color: $color-secondary;
     }
@@ -42,14 +43,16 @@ html {
     transition: 500ms;
     &:hover, &:active {
         color: $color-secondary;
+        text-shadow: 0 0 5px $color-secondary !important;
     }
 }
 
 .current > .nav-link {
     color: $color-secondary;
+    text-shadow: 0 0 5px $color-secondary !important;
 }
 
-.section {
+.page-section {
     padding-top: 20vh;
     min-height: 100vh;
     text-align: center;
@@ -65,13 +68,10 @@ html {
 
     &:hover {
         background-color: $color-secondary !important; 
-        border-color:$color-primary !important;
+        // border-color:$color-primary !important;
+        // boder-color: $color-secondary;
         color: $color-primary !important;
-    }
-
-    &:focus, &:active {
-        box-shadow:none !important;
-        outline:0px !important;
+        box-shadow: 0 0 30px $color-secondary !important; 
     }
 
     &:active {
@@ -82,6 +82,7 @@ html {
         background-color: $color-primary;
         border-color: $color-secondary;
         color: $color-secondary;
+        box-shadow: none;
     }
 }
 

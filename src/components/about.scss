@@ -11,26 +11,27 @@
     border-radius: 300px;
     margin-bottom: 1vh;
     border-color: $color-secondary !important;
-    width: 186px; // 186px for border
+    width: 186px; // 180px for no border
     display: inline-block;
     text-align: center;
     box-shadow:0 0 30px $color-secondary;
 }
 
-img {
+#profile-img {
     // filter: grayscale(50%) hue-rotate(190deg) brightness(1.5); // Light Mode
+    $hue-rotate: 190deg; // 305 for pink
     display: block;
     border-radius: 125px;
     border-width: 0px;
     transition: 500ms ease;
-    filter: grayscale(50%) hue-rotate(190deg) brightness(0.4);
-    animation: breathing 5s forwards;
-    @keyframes breathing {
+    filter: grayscale(90%) hue-rotate($hue-rotate) brightness(0.3);
+    animation: brighten 5s forwards;
+    @keyframes brighten {
         from {
-            filter: grayscale(50%) hue-rotate(190deg) brightness(0.3);
+            filter: grayscale(90%) hue-rotate($hue-rotate) brightness(0.3);
         } 
         to {
-            filter: grayscale(50%) hue-rotate(190deg) brightness(1.3);
+            filter: grayscale(90%) hue-rotate($hue-rotate) brightness(1.3);
         }
     }
 }
@@ -42,6 +43,7 @@ img {
     margin-left: 5px;
     margin-right: 5px;
     &:hover {
+        text-shadow: 0 0 20px $color-secondary;
         color: $color-secondary;
     }
 }

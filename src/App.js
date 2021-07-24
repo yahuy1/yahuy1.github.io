@@ -1,7 +1,8 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
-import Reveal from 'react-reveal/Reveal';
+import Fade from 'react-reveal/Fade';
 import About from './components/About';
+import WorkEducation from './components/WorkEducation';
 import './app.scss';
 
 function App() {
@@ -12,53 +13,46 @@ function App() {
       <nav className="navbar navbar-expand-sm sticky-top">
         
         {/* Brand */}
-        <nav><a className="name" href="#"><i class="bi bi-chevron-up" style={{fontSize: '40px'}}></i></a></nav>
+        <nav><a className="home" href="#top"><i className="bi bi-chevron-up" style={{fontSize: '40px'}}></i></a></nav>
         
         {/* Navbar links */}
         <Scrollspy 
           className="scrollspy nav navbar-nav" 
-          items={ ['about', 'education', 'experience', 'achievements', 'contact'] } 
+          items={ ['about', 'work_education', 'achievements', 'contact'] } 
           currentClassName="current"
         >
           <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-          <li className="nav-item"><a className="nav-link" href="#education">Education</a></li>
-          <li className="nav-item"><a className="nav-link" href="#experience">Experience</a></li>
+          <li className="nav-item"><a className="nav-link" href="#work_education">Work & Education</a></li>
           <li className="nav-item"><a className="nav-link" href="#achievements">Achievements</a></li>
           <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
 
           {/* Generate CV button */}
-          <button className="btn btn-primary">Download CV</button>
+          <button className="btn">Download CV</button>
         </Scrollspy>
       </nav>
       
-      {/* Main */}
       {/* About */}
-      <section id="about" className="section">
+      <section id="about" className="page-section">
         <About />
       </section>
-            
-      <Reveal effect="animated-fadeInUp">
 
-        {/* Education */}
-        <section id="education" className="section">
-          <h1>Education</h1>
-        </section>
+      {/* Work & Education */}
+      <section id="work_education" className="page-section">
+          <WorkEducation />
+      </section>
 
-        {/* Experience */}
-        <section id="experience" className="section">
-          <h1>Experience</h1>
-        </section>
+      <Fade>
 
         {/* Achievements */}
-        <section id="achievements" className="section">
+        <section id="achievements" className="page-section">
           <h1>Achievements</h1>
         </section>
 
         {/* Contact */}
-        <section id="contact" className="section">
+        <section id="contact" className="page-section">
           <h1>Contact</h1>
         </section>
-      </Reveal>
+      </Fade>
     </div>
   );
 }

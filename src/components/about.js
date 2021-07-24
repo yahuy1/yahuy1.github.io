@@ -3,7 +3,7 @@ import profilePic from '../myPhoto.jpg';
 import Fade from 'react-reveal/Fade';
 import './about.scss';
 
-function About() {
+export default function About() {
     const [more, setMore] = useState(false);
     const [clicked, setClicked] = useState(false);
 
@@ -19,7 +19,7 @@ function About() {
                             {/* Profile Image */}
                             <div>
                                 <div className="img-border">
-                                    <img src={profilePic} alt="mypicture" height="180px" width="180px" />
+                                    <img id="profile-img" src={profilePic} alt="mypicture" height="180px" width="180px" />
                                 </div>
                             </div>
 
@@ -29,10 +29,10 @@ function About() {
 
                             {/* Icons */}
                             <div className="icon-container">
-                                <a href="https://github.com/yahuy1" target="_blank"><i class="bi bi-github text-icon"></i></a>
-                                <a href="https://www.linkedin.com/in/huy-nguyen-3023611ba/" target="_blank"><i class="bi bi-linkedin text-icon"></i></a>
-                                <a href="mailto:nguyengiahuyak29@gmail.com" target="_blank"><i class="bi bi-google text-icon"></i></a>
-                                <a href="https://www.facebook.com/yahuysan/" target="_blank"><i class="bi bi-facebook text-icon"></i></a>
+                                <a href="https://github.com/yahuy1" target="_blank" rel="noreferrer"><i className="bi bi-github text-icon"></i></a>
+                                <a href="https://www.linkedin.com/in/huy-nguyen-3023611ba/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin text-icon"></i></a>
+                                <a href="mailto:nguyengiahuyak29@gmail.com" target="_blank" rel="noreferrer"><i className="bi bi-google text-icon"></i></a>
+                                <a href="https://www.facebook.com/yahuysan/" target="_blank" rel="noreferrer"><i className="bi bi-facebook text-icon"></i></a>
                             </div>
                         </div>
                     </Fade>
@@ -55,5 +55,3 @@ function About() {
         </div>
     );
 }
-
-export default About;
