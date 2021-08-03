@@ -52,7 +52,7 @@ b {
 
 .timeline ol {
 	li:not(:first-child) {
-		margin-left: 14px;
+		margin-left: 8px;
 	}
 }
 
@@ -60,10 +60,10 @@ b {
 	content: "";
 	position: absolute;
 	top: 50%;
-	left: calc(100% + 1px);
+	left: calc(100% + 0px);
 	bottom: 0;
-	width: 12px;
-	height: 12px;
+	width: 9px;
+	height: 9px;
 	transform: translateY(-50%);
 	border-radius: 50%;
 	background: $color-secondary; //#F45B69;
