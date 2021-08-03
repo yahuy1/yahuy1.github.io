@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import WorkEducation from './components/WorkEducation';
 
 ReactDOM.render(
   <React.StrictMode>

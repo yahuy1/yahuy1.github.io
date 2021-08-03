@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import SwiperCore, { Mousewheel, Navigation, Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,56 +8,66 @@ SwiperCore.use([Mousewheel, Navigation, Controller]);
 
 export default function WorkEducation() {
     return (
-        <Fade left cascade>
+        <Fade right cascade>
             <Swiper
                 mousewheel={{forceToAxis: "true"}}
-                setWrapperSize={true}
                 freeMode={true}
                 spaceBetween={0}
                 slidesPerView={1}
+                grabCursor={true}
             >
                 <SwiperSlide>
                     <section style={{width: "200vw"}}>
-                        <section class="timeline">
+                        <section className="timeline">
                             <ol>
                             <li>
                                 <div>
-                                <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                                    <time>Aug 2017</time> 
+                                    <p><b>Phan Boi Chau High School for The Gifted</b></p>
+                                    <p>Informatics Specialized Class</p>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                                    <time>May 2020</time> 
+                                    <p><b>Phan Boi Chau High School for the Gifted</b></p>
+                                    <ul className="timeline-item-list">
+                                        <p>Graduate</p>
+                                        <li>11th Grade GPA: 9.2</li>
+                                        <li>12th Grade GPA: 9.3</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                                    <time>Aug 2020</time>
+                                    <p><b>Miami University</b></p>
+                                    <p>B.S. in Computer Science</p>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+                                <time>Dec 2020</time> 
+                                <p><b>BENIT PTY LTD</b></p>
+                                <p>Web Develpment Intern</p>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+                                <time>Mar 2021</time>
+                                <p><b>BENIT PTY LTD</b></p>
+                                <ul className="timeline-item-list">
+                                        <p>End of Internship</p>
+                                        <li>Develop grading functionality for an educational website</li>
+                                        <li>Re-design the company's intern roadmap</li>
+                                    </ul>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                                <time>April 2021</time> 
+                                <p><b>Developh Vietnam</b></p>
+                                <p>Web Developer</p>
                                 </div>
                             </li>
                             <li></li>
@@ -66,6 +76,7 @@ export default function WorkEducation() {
                     </section>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <div style={{width: "0vw"}}></div>
                 </SwiperSlide>
             </Swiper>
         </Fade>
