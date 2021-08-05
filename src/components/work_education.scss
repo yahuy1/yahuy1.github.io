@@ -112,6 +112,15 @@ b {
 	margin-bottom: 8px;
 }
 
+@for $i from 1 through 6 {
+    .timeline {
+        *:nth-child(#{$i}){
+            animation-delay: $i * 0.3s - 0.3s !important;
+            z-index: 100 !important;
+        }
+    }
+  }
+
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 599px) {
