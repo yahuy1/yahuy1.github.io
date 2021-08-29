@@ -2,6 +2,7 @@
 
 $color-primary: black;
 $color-secondary: rgb(53, 139, 196);
+$color-secondary-low-opacity: rgba(53, 139, 196, 0.8);
 $color-inactivate: rgba(255, 255, 255, 0.5);
 
 html {
@@ -56,6 +57,9 @@ html {
     padding-top: 20vh;
     min-height: 100vh;
     text-align: center;
+    &:last-child {
+        min-height: 50vh;
+    }
 }
 
 .btn {

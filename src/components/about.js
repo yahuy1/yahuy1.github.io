@@ -44,7 +44,7 @@ export default function About() {
                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae libero condimentum, finibus orci vel, imperdiet augue. Nulla odio tellus, faucibus nec maximus cursus, eleifend eu odio. Maecenas nec quam at nisl pellentesque convallis. Aenean ut mauris semper, mollis massa id, porttitor odio. Quisque sed accumsan augue. Vestibulum vel velit a felis ullamcorper imperdiet a pretium est. Suspendisse luctus bibendum quam pretium vehicula. Proin tempor pellentesque eros, vestibulum convallis massa lobortis ut. Morbi consequat in dolor vel semper. Maecenas elementum faucibus felis, rutrum commodo lectus faucibus ut.</p> */}
                     <p>Hello There!</p>
                     <p>My name is Huy. I am currently pursuing a Bachelor's Degree in Computer Science at Miami University and working as a web developer. I am competent at React, Express, NodeJS, and have had experience with other tools (jQuery, GraphQL, Amplify, . . .). I also love competitive programming and have been participating in this sport for a few years.</p>
-                    <p>At the moment, I am focusing improving my skills, as well as learing new tools for Full Stack Software Development, and Artificial Intelligence too.</p>
+                    <p>At the moment, I am focusing on improving my skills, as well as learning new tools for Full Stack Software Development, and Artificial Intelligence too.</p>
                     <p>I am always open to new opportunities and challenges. If you would like to reach me, feel free to drop me a message using any method under the contact section.</p>
                     <p>Thank you for visiting :)</p>
                 </div>

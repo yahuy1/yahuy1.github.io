@@ -2,7 +2,8 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Fade from 'react-reveal/Fade';
 import About from './components/About';
-import WorkEducation from './components/WorkEducation';
+import Education from './components/Education';
+import Honors from './components/Honors';
 import './app.scss';
 
 function App() {
@@ -18,12 +19,12 @@ function App() {
         {/* Navbar links */}
         <Scrollspy 
           className="scrollspy nav navbar-nav" 
-          items={ ['about', 'work_education', 'achievements', 'contact'] } 
+          items={ ['about', 'education', 'honors', 'contact'] } 
           currentClassName="current"
         >
           <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-          <li className="nav-item"><a className="nav-link" href="#work_education">Work & Education</a></li>
-          <li className="nav-item"><a className="nav-link" href="#achievements">Achievements</a></li>
+          <li className="nav-item"><a className="nav-link" href="#education">Work & Education</a></li>
+          <li className="nav-item"><a className="nav-link" href="#honors">Honors & Projects</a></li>
           <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
 
           {/* Generate CV button */}
@@ -37,17 +38,16 @@ function App() {
       </section>
 
       {/* Work & Education */}
-      <section id="work_education" className="page-section">
-          <WorkEducation />
+      <section id="education" className="page-section">
+        <Education />
+      </section>
+
+      {/* Achievements */}
+      <section id="honors" className="page-section">
+        <Honors />
       </section>
 
       <Fade>
-
-        {/* Achievements */}
-        <section id="achievements" className="page-section">
-          <h1>Achievements</h1>
-        </section>
-
         {/* Contact */}
         <section id="contact" className="page-section">
           <h1>Contact</h1>

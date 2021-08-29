@@ -1,0 +1,38 @@
+@import "../app.scss";
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 7vw;
+    row-gap: 10vh;
+    padding-left: 9vw;
+}
+
+h4 {
+    margin-bottom: 3em !important;
+}
+
+.honor_item {
+    text-decoration: none;
+    color: $color-secondary;
+    padding-top: 3em;
+    width: 23vw;
+    height: 30vh;
+    border: solid 2px;
+    border-radius: 50px;
+    transition: 500ms;
+    &:hover {
+        color: $color-secondary;
+        box-shadow: 0 0 20px $color-secondary;
+    }
+}
+
+
+@for $i from 1 through 6 {
+    #container {
+        .honor_item:nth-child(#{$i}){
+            animation-delay: $i * 0.3s - 0.3s !important;
+        }
+    }
+}
