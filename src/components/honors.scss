@@ -6,20 +6,20 @@
     flex-wrap: wrap;
     column-gap: 7vw;
     row-gap: 10vh;
-    padding-left: 9vw;
+    padding-left: 12vw;
 }
 
-h4 {
-    margin-bottom: 3em !important;
+h5 {
+    margin-bottom: 3.5em !important;
 }
 
 .honor_item {
     text-decoration: none;
     color: $color-secondary;
     padding-top: 3em;
-    width: 23vw;
+    width: 21vw;
     height: 30vh;
-    border: solid 2px;
+    border: solid 1px;
     border-radius: 50px;
     transition: 500ms;
     &:hover {
