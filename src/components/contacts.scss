@@ -1,0 +1,28 @@
+@import '../app.scss';
+
+#contact_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10vw;
+    text-align: left;
+
+    p {
+        font-size: 15px;
+    }
+
+    a {
+        color: $color-secondary;
+        text-decoration: none;
+        &:hover {
+            color: $color-secondary;
+            text-decoration: none;
+        }
+    }
+}
+
+#copyright {
+    margin-top: 6vh;
+    font-size: 11px;
+}
+

@@ -9,8 +9,8 @@
     padding-left: 12vw;
 }
 
-h5 {
-    margin-bottom: 3.5em !important;
+h4 {
+    margin-bottom: 3em !important;
 }
 
 .honor_item {
@@ -20,7 +20,7 @@ h5 {
     width: 21vw;
     height: 30vh;
     border: solid 1px;
-    border-radius: 50px;
+    border-radius: 0px;
     transition: 500ms;
     &:hover {
         color: $color-secondary;

@@ -1,10 +1,9 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
-import Fade from 'react-reveal/Fade';
 import About from './components/About';
 import Education from './components/Education';
 import Honors from './components/Honors';
-import Contact from './components/Contact';
+import Contacts from './components/Contacts';
 import './app.scss';
 
 function App() {
@@ -20,13 +19,13 @@ function App() {
 				{/* Navbar links */}
 				<Scrollspy
 					className="scrollspy nav navbar-nav"
-					items={['about', 'education', 'honors', 'contact']}
+					items={['about', 'education', 'honors', 'contacts']}
 					currentClassName="current"
 				>
 					<li className="nav-item"><a className="nav-link" href="#about">About</a></li>
 					<li className="nav-item"><a className="nav-link" href="#education">Work & Education</a></li>
 					<li className="nav-item"><a className="nav-link" href="#honors">Honors & Projects</a></li>
-					<li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+					<li className="nav-item"><a className="nav-link" href="#contacts">Contact</a></li>
 
 					{/* Generate CV button */}
 					<button className="btn">Download CV</button>
@@ -49,8 +48,8 @@ function App() {
 			</section>
 
 			{/* Contact */}
-			<section id="contact" className="page-section">
-				<Contact />
+			<section id="contacts" className="page-section">
+				<Contacts />
 			</section>
 		</div>
 	);
