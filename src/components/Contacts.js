@@ -16,7 +16,7 @@ export default function Contact() {
 
                 <div>
                     <div className="contact_item">
-                        <p>Linkedin: <a href="https://www.linkedin.com/in/huy-nguyen-3023611ba/" target="_blank" rel="noreferrer">Huy Nguyen</a></p>
+                        <p>Linkedin: <a href="https://www.linkedin.com/in/yahuy1/" target="_blank" rel="noreferrer">Huy Nguyen</a></p>
                     </div>
                     <div className="contact_item">
                         <p>GitHub: <a href="https://github.com/yahuy1" target="_blank" rel="noreferrer">yahuy1</a></p>

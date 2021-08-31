@@ -30,7 +30,7 @@ export default function About() {
                             {/* Icons */}
                             <div className="icon-container">
                                 <a href="https://github.com/yahuy1" target="_blank" rel="noreferrer"><i className="bi bi-github text-icon"></i></a>
-                                <a href="https://www.linkedin.com/in/huy-nguyen-3023611ba/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin text-icon"></i></a>
+                                <a href="https://www.linkedin.com/in/yahuy1/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin text-icon"></i></a>
                                 <a href="mailto:nguyengiahuyak29@gmail.com" target="_blank" rel="noreferrer"><i className="bi bi-google text-icon"></i></a>
                                 <a href="https://www.facebook.com/yahuysan/" target="_blank" rel="noreferrer"><i className="bi bi-facebook text-icon"></i></a>
                             </div>
