@@ -26,7 +26,7 @@ function App() {
 					<li className="nav-item"><a className="nav-link" href="#about">About</a></li>
 					<li className="nav-item"><a className="nav-link" href="#education">Work & Education</a></li>
 					<li className="nav-item"><a className="nav-link" href="#honors">Honors & Projects</a></li>
-					<li className="nav-item"><a className="nav-link" href="#contacts">Contact</a></li>
+					<li className="nav-item"><a className="nav-link" href="#contacts">Contacts</a></li>
 
 					{/* Generate CV button */}
 					<a className="btn" href={CV} target="_blank" rel="noreferrer">Download CV</a>
