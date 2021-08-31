@@ -17,7 +17,7 @@
     "swiper": "^6.7.5",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "http://yahuy1.github.io/",
+  "homepage": "https://yahuy1.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
