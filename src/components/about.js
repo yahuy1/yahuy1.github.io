@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import profilePic from '../myPhoto.jpg';
+import profilePic from './myPhoto.jpg';
 import Fade from 'react-reveal/Fade';
 import './about.scss';
 

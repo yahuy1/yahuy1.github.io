@@ -32,7 +32,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <p id="copyright">Made with ReactJS. Last Updated: August 2021. © Huy Gia Nguyen</p>
+            <p id="copyright">Made with ReactJS. Last Updated: August 2021. © 2021 Huy Gia Nguyen</p>
         </div>
     );
 }
