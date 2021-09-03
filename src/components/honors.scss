@@ -6,19 +6,20 @@
     flex-wrap: wrap;
     column-gap: 7vw;
     row-gap: 10vh;
-    padding-left: 12vw;
+    // padding-left: 12vw;
+    justify-content: center;
 }
 
 h4 {
-    margin-bottom: 3em !important;
+    margin-bottom: 100px !important;
 }
 
 .honor_item {
     text-decoration: none;
     color: $color-secondary;
     padding-top: 3em;
-    width: 21vw;
-    height: 35vh;
+    width: 310px;
+    min-height: 300px;
     border: solid 1px;
     border-radius: 0px;
     transition: 500ms;
