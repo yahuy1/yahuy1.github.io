@@ -4,7 +4,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Honors from './components/Honors';
 import Contacts from './components/Contacts';
-import CV from './components/Resume_HuyNguyen.pdf'
+import CV from './components/CV_HuyGiaNguyen.pdf'
 import './app.scss';
 
 function App() {
