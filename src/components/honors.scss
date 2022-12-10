@@ -1,13 +1,21 @@
 @import "../app.scss";
 
-#container {
+#honors-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 7vw;
+    column-gap: 20px;
     row-gap: 10vh;
     // padding-left: 12vw;
     justify-content: center;
+    &.project {
+        row-gap: 50px;
+    }
 }
 
 h4 {
@@ -27,11 +35,24 @@ h4 {
         color: $color-secondary;
         box-shadow: 0 0 20px $color-secondary;
     }
+    &.project {
+        min-height: 1px;
+
+        h4 {
+            margin-bottom: 0 !important;
+        }
+
+        h6 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+    }
 }
 
 
 @for $i from 1 through 6 {
-    #container {
+    .container-1 {
         .honor_item:nth-child(#{$i}){
             animation-delay: $i * 0.3s - 0.3s !important;
         }

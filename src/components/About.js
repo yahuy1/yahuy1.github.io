@@ -25,7 +25,7 @@ export default function About() {
 
                             {/* Description */}
                             <h1 style={{fontSize: "40px"}}>Nguyen Gia Huy</h1>
-                            <p>Computer Science Sophomore @ Miami University</p>
+                            <p>Computer Science Junior @ Miami University</p>
 
                             {/* Icons */}
                             <div className="icon-container">

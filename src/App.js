@@ -4,7 +4,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Honors from './components/Honors';
 import Contacts from './components/Contacts';
-import CV from './components/Resume_HuyGiaNguyen.pdf'
+import CV from './components/Resume_HuyNguyen.pdf'
 import './app.scss';
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
 					<li className="nav-item"><a className="nav-link" href="#contacts">Contacts</a></li>
 
 					{/* Generate CV button */}
-					<a className="btn" href={CV} target="_blank" rel="noreferrer">Download CV</a>
+					<a className="btn" href={CV} target="_blank" rel="noreferrer">Resume</a>
 				</Scrollspy>
 			</nav>
 

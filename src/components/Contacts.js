@@ -7,7 +7,7 @@ export default function Contact() {
             <div id="contact_container">
                 <div>
                     <div className="contact_item">
-                        <p>Email: <a href="mailto:nguyengiahuyak29@gmail.com" target="_blank" rel="noreferrer">nguyengiahuyak29@gmail.com</a></p>
+                        <p>Email: <a href="mailto:nguyengiahuyak29@gmail.com" target="_blank" rel="noreferrer">nguyenhg@miamioh.edu</a></p>
                     </div>
                     <div className="contact_item">
                         <p>Facebook: <a href="https://www.facebook.com/yahuysan/" target="_blank" rel="noreferrer">Gia Huy</a></p>
@@ -32,7 +32,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <p id="copyright">Made with ReactJS. Last Updated: August 2021. © 2021 Huy Gia Nguyen</p>
+            <p id="copyright">Last Updated: 2022.</p>
         </div>
     );
 }
